@@ -1,0 +1,83 @@
+                                                            JavaScript
+                                                    ..........................
+->JavaScript is a High level programming language which was developed by Branden Flck in 1994 at NetScape Navigator.
+->Initial name of JS is LiveScript.
+->It is used to perform validation and dynamic functionalities.
+->Now a days we are using for both frontend and backend purpose.
+->JavaScript is Just in time(JIT) compilation programming language which means converting source code to machince code and execute immidiately.
+
+(Q)How to create a webpage?
+Demo.html
+..........
+<html>
+    <head>
+        <title>Demonstrate</title>
+        <style>.......</style>
+    </head>
+    <body>
+        <script>
+            console.log("Hello World");
+        </script>
+    </body>
+</html>    
+
+->Function:-
+..............
+->Function is set of statement which is used to perform specific task.
+
+syntax:-
+........
+function function_Name(){
+    console.log("...");
+}
+function_Name();//function calling
+
+->Identifier :-
+................
+->Identifier are the names which are given by the developer while coding.
+->Ruels:-1)Identifier should not be a keyword.
+         2)Identifier shouldn't be started with special character excluding $ and _ .
+         3)Identifier shouldn't be start with digit.
+
+->Variable :-
+...............
+->Variable are used for store values.
+syntax:-keyword Variable_name; //Variable declaration
+        Variable_name=value;   //Variable Initialization
+
+->To create a variable we use 3 keyword in JavaScript.i.e let,const,var.
+->Let and const are introduced in ES-6 version.
+->Var is introduced in older version if JavaScript.
+->Variable declaration is not possible but re-initialization is possible.
+->If we declare a variable without initialization the default value will be assigned by JavaScript engine.
+->The default value is undefined.
+->JavaScript is a dynamic typed programming language.
+
+->Dynamic Type Programming Language:-
+......................................
+->It means at the time variable declaration we no need to use datatype which means once we create a variable we can assign any time of value.
+ex:-
+....
+let a=1;
+a="JavaScript";
+a=true;
+a=undefined;
+
+ex:-
+...
+<script>
+    function main(){
+        let a=10;
+        console.log("Value of a is: "+a);//10
+    }
+    main();
+</script> 
+
+->DataType:-
+..............
+->Datatype are used to represent the type of value which we store into a variable.
+->There are 2types 1)Primitive DataType
+                   2)Non-Primitive DataType
+1)Primitive DataType:-
+........................
+->This 
