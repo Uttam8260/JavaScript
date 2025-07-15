@@ -80,4 +80,158 @@ ex:-
                    2)Non-Primitive DataType
 1)Primitive DataType:-
 ........................
-->This 
+->This is predefined and it is 7 types i.e. Number,String,Boolean,Null,Undefined,BigInt,Symbol 
+ i)Number :-
+ ............>The Number datatype is used to store any numeric value, that means we can store integer or floating value.
+ ex:-<script>
+        function main(){
+            let a=10;
+            console.log(a,typeOf a);
+            let b=10.5;
+            console.log(b,typeOf b);
+        }main();
+     </script>
+
+->log() method accepts any number of arguments.
+->typeOf   is a special keyword which is used to check the datatype of a variable.
+ii)String:-
+............>String datatype is used to store a character or group of character.
+->In JavaScript String can be represented by single or double quete or back tick '',"",``.
+ex:-<script>
+        function main(){
+            let a="hello";
+            console.log(a,typeOf a);
+            let b=`world`;
+            console.log(b,typeOf b);
+        }main();
+     </script>
+     iii)Boolean:-
+     ..............>Boolean type is used to store true or false values.
+     ex:-<script>
+        function main(){
+            let gender;
+            console.loog(gender,typeOf gender);
+        }main();
+     </script>
+
+->If we create a variable without initialization the Initial value is undefined.
+->Datatype of undefined is undefined.
+->Falsy Values:-
+.................>The values which are returning false when we are converting into boolean type is known as falsy values.
+->Their are 6 types falsy Values i.e. false,0,null,undefined,Nan," ".
+->Truth values:-
+................>The values which are returning true when we are converting into boolean type is known as truth values.
+->Apart from falsy values all are truth values.
+
+iv)Null:-
+............>Null is a special character or value which is represent wmpty or nothing.
+->The datatype og null value is an object.
+->Bug means we are not getting expected output/result.
+ex:-<script>
+        function main(){
+            let a=null;
+            console.log(a,typeOf a);
+        }main();
+     </script>
+    
+v)BigInt :-
+............>BigInt datatype is used to store the large numbers which are can't be store into a number then we use BigInt.It is introduced in ES-6 version.
+ex:-<script>
+        function main(){
+            let a=10n;
+            console.log(a,typeOf a);
+            let b=10.5n;
+            console.log(b,typeOf b);
+        }main();
+     </script>  
+
+->Operator:-
+...............>Operator is used to operate in between two or more operand.
+->Their are 6 types of operand present i.e Arithmatic (+,-,*,%),Relational(>,<,>=,<=,==),Logical(||,&&,=),Bitwise(|,&),Unary(++,--),conditional or teminal(?)  
+->concatination:-
+...................>concatination means joining or combining two or more operands.
+->To perform concatination atleast one operand should be String.
+->After concatination result value is String type.
+
+->Type coercion:-
+..................>Converting one tyep to another type is known as type coercion.
+->ex:- 1+'1'="11" number+String=String
+
+->NaN:-
+........>NaN is a special type, which we get when the arithmatic operation is failed.
+->The datatype of NaN is number.
+->Type conversion:-
+....................>Converting one type to another type is knowns type conversion.
+ex:-
+Number("10");->10
+String(12);->"12"
+
+->Difference between == & ===
+..................................
+->Double equal(==) is a normal comparision operator but === is not a normal comparision operator.
+->== support type coercion but === not support type coercion.
+->== checks the values not datatype but === checks the values and datatype also.
+ex:-function main(){
+    let 1=5;
+    let b="5";
+    if(a==b){
+        console.log("Hello");
+    }
+    else{
+        console.log("world");
+    }
+    if(a===b){
+        console.log("Hii");
+    }
+    else{
+        console.log("Hyy");
+    }
+}main();
+
+->math.trunc() is used for remove the decimal part of a number and return only integer part.Basically we are not using business logic because it removes the decimal point.
+
+->Looping statement:-
+.....................>For iterating over the values we are using Looping concepts.
+->It is 5 types i.e.(i) while Loop syntax:-initialization while(condition){//   Incr/Decr}
+                    (ii)For Loop syntax:-for(initialization;updation;Incr/Decr);
+                    (iii)Do-while Loop syntax:-do{//} while(condition);
+                    (iv)For each Loop
+                    (v)For in Loop
+
+->break:-
+..........>It is used to terminate the execution.
+ex:-function main(){
+    for(int i=1;i<=5;i++){
+        if(i%2==0){
+            break;
+        }
+        console.log(i);
+    }
+}
+main();
+
+->Continue:-
+.............>Continue is used for skip the execution.
+ex:-function main(){
+    for(int i=1;i<=5;i++){
+        if(i%2==0){
+            continue;
+        }
+        console.log(i);
+    }
+}
+main();
+
+->return :-
+............>The return statement is used to specfiy the value that a function should output or return back to the caller method.
+ex:-function main(){
+    for(int i=1;i<=5;i++){
+        if(i%2==0){
+            return;
+        }
+        console.log(i);
+    }
+    console.log("outside loop");
+}
+main();
+
