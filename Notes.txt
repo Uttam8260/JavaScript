@@ -23,7 +23,13 @@ Demo.html
 
 ->Function:-
 ..............
-->Function is set of statement which is used to perform specific task.
+->Function is set of statement which is used to perform specific task when we call.
+->Adv:-Reusability of code
+       Function will increse redability of code.
+    
+->A JavaScript function return any type of value because it is a dynamic type programming language.
+->When a function not returning any value bydefault it return "undefined".
+->The statement which is never execute throughout the program is known as unrechable statement.
 
 syntax:-
 ........
@@ -235,3 +241,96 @@ ex:-function main(){
 }
 main();
 
+->JavaScript function are consider as 1st class citizen or first class function, which means a 
+i)A function can store into a variable.
+ii)A function can return other function.
+iii)A function can be passed as an another function.
+ex:-
+function main(){
+    let greet="Happy world";
+}
+main();
+console.log(greet);//Happy world
+
+->A function without any name is known as anonymous function.
+ex:-
+let a=function(){
+    console.log("Hii");
+}
+a();
+
+->In JavaScript we can create 3types of function i.e.
+i)Function declaration:-
+..........................>Creating a function with function keyword followed function name.
+syntax:- function function_name(){
+        //code
+    }
+ii)Function Expression:-
+.........................>Creating a function with function keyword and store into a Variable.
+syntax:-let a=function(){
+        //code
+    }
+iii)Array function:-
+.....................>Array function is a simple way to create anonymous function.It is introduced in ES-6 version.
+syntax:- let a=()=>{
+        //code
+    }
+
+->Function with parameter:-
+............................>Their are two types of parameter i.e. Formal and Actual
+->The parameter which we pass at function declaration is known as formal parameter.
+->The parameter which we pass at function call is known as actual parameter.
+ex:
+function main(a,b){//formal parameter
+        //code
+}main(10,20);//actual parameter
+NOTE:-
+.......
+->In JavaScript parameterised function can be called with less number of arguments or equal number of arguments or more number of arguments.
+->If we call with less number of arguments the default value will be undefined.
+->If we call with more number of argument the required argument will take and rest ignored.
+->A function which passed as an argument to another function is known as callback function.
+->A function which accepting another function is known as heigher order function.
+->A function which returning another function is known as heigher order function.
+ex:-calc(12,2,add);
+    .           .
+    .           .
+    .           .
+heigher order  callback function
+
+->JavaScript runtime environment:-
+...................................>which provides the necessary components in order to run JavaScript programs.
+->Mainly it is 4 components i.e.
+  1)JS engine
+  2)web API's
+  3)callback queue
+  4)Microtask queue
+->JavaScript engine is a collection of programs which is used to execute JavaScript code.
+-> JavaScript engine has 2 memory i.e. 1)Heap area 2)Call stack
+->Heap area is an unstructured memory which store all the objects which is required for JavaScript application.
+->Call stack is the place where JavaScript code executes with the help of execution context.
+->Web API are use to provide additional functionality to JavaScript engine.
+->callback queue is a data structure which is use to store callback function which are ready to execute.
+->Microtask queue is use to store the callback function which has heigher proirity than the callback function which are waiting inside the callback queue.
+ ->in JavaScript memory will be created for all variables and functions before single line of code get executed.
+ ->If we create a variable by using var keyword Initial value is undefined.
+ ->If we create a variable by using let and const keyword Initial value is uninitialized.
+ ->The Initial value of function declaration is actual function.
+ ->The Initial value of function Expression and actual function id depend upon keyword.
+
+->Global Execution context:-
+......................
+ ->Execution context is a container where JavaScript code gets executed.
+ ->Execution context will be created for every function call.
+ ->An execution context have 2 phase i)Memory phase 2)Code execution phase
+
+->JS object:-
+..............>Object is a real world entity which having state and behaviour.
+->In JavaScript we can create object in 2 ways.i.e. i)object literal syntax:- let objRef={
+                                                                    ..........              key : value,
+                                                                                            key : value
+                                                                                        };
+                                                    ii)object constructor syntax:- let objRef=new object();
+                                                                         ..........             
+->By using .notation we access static property.
+->By using [] notation we access dynamic property.
