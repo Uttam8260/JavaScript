@@ -334,3 +334,52 @@ heigher order  callback function
                                                                          ..........             
 ->By using .notation we access static property.
 ->By using [] notation we access dynamic property.
+ex:- 
+<script>
+ let Student={
+        studId:"a101",
+        firstName:"Uttam",
+        lastName:"Sahoo",
+        birthYear:2003,
+        age:21,
+        gender:"male"
+    };
+    console.log(Student);
+
+//using .notation (objRef.propName);
+let sName=Student.firstName;
+console.log("Student Name = ${sName}");
+let sId=Student.studId;
+console.log('Student Id=${sId}');
+
+//using [] notation (objRef["propName"])
+let sLastName=Student["lastName"];
+console.log("student Name=${sLastName}");
+let Gender=Student["Gender"];
+console.log('student Gender=${Gender}');
+
+//Accessing Non-existing prop from an object
+let stuAddress=student.address;
+console.log('student Address = ${stuAddress}');
+let stuMarks=student["marks"];
+console.log('student Marks = ${stuMarks}');
+</script>
+
+->Strict Mode:-
+................>Strict Mode is used to maintain secured JavaScript code which means we can avoid the commonly doing mistakes by developers.
+ex:-
+<script>
+    "use strict"
+    let passTest=false;
+    let hasDrivingLic=false;
+    passTest=true;
+    if(passTest){
+        hasDrivingLic=true;
+    }
+    console.log("Got License="+hasDrivingLic);
+</script>
+
+->Variable:-
+.............>Their are 2 types of variable i.e. local and Global variable
+i)local variable:-The variable which are created inside the block or inside the function those variable called as local variable.
+ii)Global Variable:-The variable which are not belongs to any other block or function is known as Global variable.
