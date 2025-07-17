@@ -383,3 +383,24 @@ ex:-
 .............>Their are 2 types of variable i.e. local and Global variable
 i)local variable:-The variable which are created inside the block or inside the function those variable called as local variable.
 ii)Global Variable:-The variable which are not belongs to any other block or function is known as Global variable.
+
+->Scope:-
+..........>scope means accesiability of variables.
+Their are 3 types of scope in JavaScript.
+i)Global scope:-
+................>The variable and function which is not belongs to any function or method is known as Global scope.
+ii)Function scope:-
+..................>The variable or function which are created inside the block or inside the function those variable and function are accesiable within the function.
+->It is also known as local scope.
+->In js every function create a scope.
+iii)Block scope:-
+.................>The variable which are created with let or const keyword those are can be accesiable within the block.
+->Blocks are creating scope from ES-6 version.
+
+->Hoisting:-
+............>Hoisting is a default behaviour or mechanism where the variable and function are available before function declaration.
+->Var is hoisted and Initial value is undefined.
+->let and const are hoisted but it is in temporary dead zone.
+->Function declaration is hoisted and the initial value is actual function.
+->Function Expression and actual function are hoisted but it depend on keyword.
+->Temporary Dead Zone is a time sense the let and const variable was hoisted and it is initialized with some values, that time is known as TDZ.
