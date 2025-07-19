@@ -393,6 +393,7 @@ ii)Function scope:-
 ..................>The variable or function which are created inside the block or inside the function those variable and function are accesiable within the function.
 ->It is also known as local scope.
 ->In js every function create a scope.
+
 iii)Block scope:-
 .................>The variable which are created with let or const keyword those are can be accesiable within the block.
 ->Blocks are creating scope from ES-6 version.
