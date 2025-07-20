@@ -406,3 +406,5 @@ iii)Block scope:-
 ->Function Expression and actual function are hoisted but it depend on keyword.
 ->Temporary Dead Zone is a time sense the let and const variable was hoisted and it is initialized with some values, that time is known as TDZ.
 
+->
+
