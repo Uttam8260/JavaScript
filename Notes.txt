@@ -405,5 +405,89 @@ iii)Block scope:-
 ->Function declaration is hoisted and the initial value is actual function.
 ->Function Expression and actual function are hoisted but it depend on keyword.
 ->Temporary Dead Zone is a time sense the let and const variable was hoisted and it is initialized with some values, that time is known as TDZ.
--> 
+
+->Difference between let,const,var
+...................................
+1)let:->let keyword is introduced in ES-6 version.
+      ->let variable are having block scope.
+      ->let variable are hoisted but it will be in TDZ.
+      ->let variable cann't be redeclared but it can be re-initialized.
+
+2)var:->var keyword is introduced in older version on JavaScript.
+      ->var variable are having function scope.
+      ->var variable are hoisted and initial value is undefined.
+      ->var variable can be redeclared and it can be re-initialized.
+
+3)const:->const keyword is introduced in ES-6 version.
+        ->let variable are having block scope.
+        ->let variable are hoisted but it will be in TDZ.
+        ->let variable can be redeclared but it cann't be re-initialized.
+
+->Execution context:-
+......................>Every execution context can be assiciated with an object and that object will have 3 properties.
+i.e. 
+1)variable object variable environment.
+2)scope chain gets determine.
+3)this keyword will be determine.
+
+1)variable object/environment:-
+...............................
+->variable environment is one of the execution context.
+->variable environment is the place where the memory will be created for all the variables and functions or innner functions.
+ex:- function studentDetails(id,name){
+        let institute="Excelr";
+        const branch="Marathahalli";
+        var course="Java full stack";
+        function printDetails(){
+            console.log(`student Name=${name},institute=${institute}`);
+        }
+        printDetails();
+        
+        let welcome=function(){
+            console.log(`Hi, ${name} Welcome To the ${institute}`);
+        }
+        var greet =()=>{
+            console.log(`Hello, ${name} Good morning!!`);
+        }
+        greet();
+    }studentDetails(1,"Uttam");
+
+    2)local environment:-
+    ......................>Lexical environment will created along with the every execution context.
+    ->Lexical environment means the local memory along with the it parent lexical environment referance.
+    ex:- let a=10;
+        function abc(){
+            let x=10;
+            function xyz(){
+                let y=30;
+                console.log(x);
+            }
+            xyz();
+        }
+        abc();
+
+    ->Lexical scope:-
+    ...................>Means variable which are created outside the function can be accesiable inside the function.
+    scope chaining:-
+    .................In js scope chaining depends upon lexical environment.
+    ->scope chain means whenever we use a variable then JavaScript engine search for that variable in current scope if it is not found then it will looking to outter scope and this process continue till globak scope.
+
+    ->this:-
+    ........>this keyword is a special variable which is one of the property of execution context.
+    ->this keyword will be executed for every execution context.
+    ->The value of this keyword will be assigned at runtime by JavaScript engine on execution context.
+    ->In  global context this points to window object.
+    ->In regular function call (declaration and Expression) this keyword points to wondow object in normal mode else it is undefined in strict mode.
+    ->Arrow functions doesn't have own this keyword.In arrow functionthis points to it's parent scope.
+
+    ->A function which attached with an object is known as method.
+    
+    ->Rest parameter:-
+    ..................>Rest parameter introduced in ES-6 version.
+    ->It is used to makes a function to accepting any number of argument as an array.
+    ->To representing rest parameter we use ...
+    syntax:- ...Variable_name;
+
+
+
 
